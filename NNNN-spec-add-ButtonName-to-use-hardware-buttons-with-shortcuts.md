@@ -66,15 +66,20 @@ The Mobile application assumes the Navigation App.
   
   | ButtonName( = Function) | NAV_FULLSCREEN_MAP | NAV_LIST |
   | ---------- |:-----------:|:-----------:|
-  |`DISPLAY_CURRENT_LOCATION`|This is the function to set your current location in the center of the map. By adding this function, users will be able to easily center their current location.|-|
-  |`ES-MX`|Spanish - Mexico|
-  |`FR-CA`|French - Canada|
-  |`DE-DE`|German - Germany|
-  |`ES-ES`|Spanish - Spain|
-  |`EN-GB`|English - GB|
-  |`RU-RU`|Russian - Russia|
-  |`TR-TR`|Turkish - Turkey|
-  |`PL-PL`|Polish - Poland|  
+  |`DISPLAY_CURRENT_LOCATION`|To set your current location in the center of the map. By adding this function, users will be able to easily center their current location.|-|
+  |`ZOOM_IN`|To enlarge the map screen when using the Navigation App.|-|
+  |`ZOOM_OUT`|To reduce the map screen when using the Navigation App.|-|
+  |`MAP_SCROLL_UP`|To scroll up on the map screen when using the Navigation App.|-|
+  |`MAP_SCROLL_DOWN`|To scroll down on the map screen when using the Navigation App.|-|
+  |`MAP_SCROLL_LEFT`|To scroll to the left on the map screen when using the Navigation App.|-|
+  |`MAP_SCROLL_RIGHT`|To scroll to the right on the map screen when using the Navigation App.|-|
+  |`MOVE_FOCUS_UP`|-|To move the focus upward on a screen (list screen) other than the map screen.|
+  |`MOVE_FOCUS_DOWN`|-|To move the focus downward on a screen (list screen) other than the map screen.|
+  |`MOVE_FOCUS_LEFT`|-|To move the focus left on a screen (list screen) other than the map screen.|
+  |`MOVE_FOCUS_RIGHT`|-|To move the focus right on a screen (list screen) other than the map screen.|
+  |`BACK`|To go back to the previous screen.|To go back to the previous screen.|
+  |`SWITCH_DISPLAY_MODE`|To switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.|-|
+  |`SET_A_DESTINATION`|To scroll on the map screen and select the place in the center of the screen to set the place as the destinationwhen using the Navigation App.|-|  
 
 ## Proposed solution
 
