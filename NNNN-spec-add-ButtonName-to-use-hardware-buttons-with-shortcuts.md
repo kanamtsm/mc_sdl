@@ -32,10 +32,6 @@ The Mobile application assumes the Navigation App.
   * This function is for scrolling to the left on the map screen when using the Navigation App.
 * Map Scroll Right
   * This function is for scrolling to the right on the map screen when using the Navigation App.
-* Switch Display Mode
-  * This function is used to switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.
-* Set a Destination
-  * When using the Navigation App, scroll on the map screen and select the place in the center of the screen to set the place as the destination.  
 * Move Focus Up
   * It is a function for moving the focus upward on a screen (list screen) other than the map screen.
 * Move Focus Down
@@ -46,6 +42,10 @@ The Mobile application assumes the Navigation App.
   * It is a function to move the focus to the right with a screen (list screen) other than the map screen.
 * Back
   * It is a function for back to the previous screen.
+* Switch Display Mode
+  * This function is used to switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.
+* Set a Destination
+  * When using the Navigation App, scroll on the map screen and select the place in the center of the screen to set the place as the destination.  
 
   Set as follows.
 
@@ -60,6 +60,21 @@ The Mobile application assumes the Navigation App.
   After scrolling to the right, if you set the "destination setting", the blue mark is set as the destination.
 
   ![pic3](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_03.PNG)
+  
+  ### Language
+  ##### Elements
+  
+  | ButtonName | NAV_FULLSCREEN_MAP | NAV_LIST |
+  | ---------- |:-----------:|:-----------:|
+  |`EN-US`|English - US|
+  |`ES-MX`|Spanish - Mexico|
+  |`FR-CA`|French - Canada|
+  |`DE-DE`|German - Germany|
+  |`ES-ES`|Spanish - Spain|
+  |`EN-GB`|English - GB|
+  |`RU-RU`|Russian - Russia|
+  |`TR-TR`|Turkish - Turkey|
+  |`PL-PL`|Polish - Poland|  
 
 ## Proposed solution
 
