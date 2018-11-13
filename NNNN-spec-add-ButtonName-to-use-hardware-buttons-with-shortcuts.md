@@ -20,7 +20,7 @@ The Mobile application assumes the Navigation App.
 
 ### Proposed ButtonName/ Function
 
-| ButtonName/ Function | NAV_FULLSCREEN_MAP | NAV_LIST        |
+| ButtonName/ Function | NAV_FULLSCREEN_MAP | NAV_LIST |
 |:---------- |:----------- |:----------- |
 |`DISPLAY_CURRENT_LOCATION`|To set your current location in the center of the map. By adding this function, users will be able to easily center their current location.|-|
 |`ZOOM_IN`|To enlarge the map screen when using the Navigation App.|-|
