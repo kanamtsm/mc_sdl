@@ -64,9 +64,9 @@ The Mobile application assumes the Navigation App.
   ### Language
   ##### Elements
   
-  | ButtonName | NAV_FULLSCREEN_MAP | NAV_LIST |
+  | ButtonName( = Function) | NAV_FULLSCREEN_MAP | NAV_LIST |
   | ---------- |:-----------:|:-----------:|
-  |`EN-US`|English - US|
+  |`DISPLAY_CURRENT_LOCATION`|This is the function to set your current location in the center of the map. By adding this function, users will be able to easily center their current location.| |
   |`ES-MX`|Spanish - Mexico|
   |`FR-CA`|French - Canada|
   |`DE-DE`|German - Germany|
