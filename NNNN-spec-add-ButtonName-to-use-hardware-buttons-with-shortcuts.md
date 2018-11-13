@@ -1,7 +1,7 @@
 # Add ButtonName to use hardware buttons with shortcuts
 
 * Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
-* Author: [XXXX]
+* Author: Marco Kok, Kana Matsushima
 * Status: **Awaiting review**
 * Impacted Platforms: iOS, Android, Core, RPC
 
@@ -32,6 +32,10 @@ The Mobile application assumes the Navigation App.
   * This function is for scrolling to the left on the map screen when using the Navigation App.
 * Map Scroll Right
   * This function is for scrolling to the right on the map screen when using the Navigation App.
+* Switch Display Mode
+  * This function is used to switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.
+* Set a Destination
+  * When using the Navigation App, scroll on the map screen and select the place in the center of the screen to set the place as the destination.  
 * Move Focus Up
   * It is a function for moving the focus upward on a screen (list screen) other than the map screen.
 * Move Focus Down
@@ -42,10 +46,7 @@ The Mobile application assumes the Navigation App.
   * It is a function to move the focus to the right with a screen (list screen) other than the map screen.
 * Back
   * It is a function for back to the previous screen.
-* Switch Display Mode
-  * This function is used to switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.
-* Set a Destination
-  * When using the Navigation App, scroll on the map screen and select the place in the center of the screen to set the place as the destination.  
+
   Set as follows.
 
   The figure below shows the focus at the current position.
