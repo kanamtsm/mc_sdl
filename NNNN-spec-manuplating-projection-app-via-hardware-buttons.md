@@ -13,7 +13,7 @@ This proposal is to add a new functions (ButtonName) to use the hardware buttons
 
 This proposal is for linking the functions (ButtonName) to the hardware button installed in the vehicle.
 Hardware buttons are not only buttons but also physical input devices such as rotary encoders.
-By linking, you can instruct the mobile application without displaying a button on the Head Unit(HU)'s UI.
+By linking, you can instruct the mobile application without displaying a User Interface(UI) button on the Head Unit(HU).
 The contents of the instruction are Zoom-In / Zoom-Out, Back etc.
 Since UI buttons don't need to be displayed, car manufacturers and developers do not have to worry about the display position of the UI buttons.
 The Mobile application assumes the Projection Mode App such as Navigation App.  
