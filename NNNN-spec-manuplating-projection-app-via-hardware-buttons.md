@@ -13,7 +13,7 @@ This proposal is to add a new functions (ButtonName) to use the hardware buttons
 
 This proposal is for linking the functions (ButtonName) to the hardware button installed in the vehicle.
 Hardware buttons are not only buttons but also physical input devices such as rotary encoders.
-By linking, you can instruct the mobile application without displaying a button on the HU's UI.
+By linking, you can instruct the mobile application without displaying a button on the Head Unit(HU)'s UI.
 The contents of the instruction are Zoom-In / Zoom-Out, Back etc.
 Since UI buttons don't need to be displayed, car manufacturers and developers do not have to worry about the display position of the UI buttons.
 The Mobile application assumes the Projection Mode App such as Navigation App.  
@@ -53,7 +53,7 @@ The Mobile application assumes the Projection Mode App such as Navigation App.
 
 ## Proposed solution
 
-In order to realize these proposals, we add a new ButtonName. Make changes to the three platforms (Core, iOS, Android).
+In order to realize these proposals, add those new ButtonName. Make changes to the three platforms (Core, iOS, Android).
 
 ### Spec Impact:
 
@@ -446,7 +446,7 @@ None.
 ## Appendix
 
 In order to realize this proposal, the HU needs to read the information of the hardware button equipped in the vehicle, and dispose that button as appropriate to ButtonName.
-As an example, let's take a look at the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and introduce a mechanism to notify the mobile application of ButtonName without going through the soft button.
+There is an example, consider the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and introduce a mechanism to notify the mobile application of ButtonName without going through the soft button.
 
 The base code is as follows.  
 HU：sdl_hmi (`https://github.com/smartdevicelink/sdl_hmi`) commit id:2db0b73444ac46db72ffe45e1eae166836be4a4a
