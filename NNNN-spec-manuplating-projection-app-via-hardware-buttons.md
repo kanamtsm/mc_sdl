@@ -476,12 +476,12 @@ None.
 ## Appendix
 
 In order to realize this proposal, the HU needs to read the information of the hardware button equipped in the vehicle, and dispose that button as appropriate to ButtonName.
-There is an example, consider the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and introduce a mechanism to notify the mobile application of ButtonName without going through the soft button.
+There is an example for the mechanism, consider the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and notify the mobile application of ButtonName without placing the UI button(soft button).
 
 The base code is as follows.  
 HU：sdl_hmi (`https://github.com/smartdevicelink/sdl_hmi`) commit id:2db0b73444ac46db72ffe45e1eae166836be4a4a
 
-It is assumed that ButtonName to be notified is subscribed
+It is assumed that ButtonName to be notified is subscribed.
 
 Correct so that the press information of the PC key is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
 
