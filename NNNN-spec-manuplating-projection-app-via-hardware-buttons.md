@@ -80,7 +80,7 @@ MOBILE_API.xml
     </element>
     <element name="ZOOM_OUT" since="x.x" />
         <warning>
-            **When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
         </warning>
     </element>
     <element name="MAP_SCROLL_UP" since="x.x">
@@ -400,7 +400,7 @@ HMI_API.xml
     <element name="ZOOM_OUT" />
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-            **</warning>
+            </warning>
     </element>
     <element name="MAP_SCROLL_UP">
         <warning>
@@ -483,7 +483,7 @@ HU：sdl_hmi (`https://github.com/smartdevicelink/sdl_hmi`) commit id:2db0b73444
 
 It is assumed that ButtonName to be notified is subscribed.
 
-**Correct so that the press information of the PC key linked "DISPLAY_CURRENT_LOCATION" in this example is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
+Correct so that the press information of the PC key linked "DISPLAY_CURRENT_LOCATION" in this example is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
 
 ```js
 ...
