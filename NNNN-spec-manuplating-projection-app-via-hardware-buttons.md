@@ -476,14 +476,14 @@ None.
 ## Appendix
 
 In order to realize this proposal, the HU needs to read the information of the hardware button equipped in the vehicle, and dispose that button as appropriate to ButtonName.
-There is an example for the mechanism, consider the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and notify the mobile application of ButtonName without placing the UI button(soft button).
+This is an example for the mechanism, consider the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and notify the mobile application of ButtonName without placing the UI button(soft button).
 
 The base code is as follows.  
 HU：sdl_hmi (`https://github.com/smartdevicelink/sdl_hmi`) commit id:2db0b73444ac46db72ffe45e1eae166836be4a4a
 
 It is assumed that ButtonName to be notified is subscribed.
 
-Correct so that the press information of the PC key is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
+Correct so that the press information of the PC key linked "DISPLAY_CURRENT_LOCATION" in this case is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
 
 ```js
 ...
@@ -499,15 +499,15 @@ SDL.NavigationAppView = Em.ContainerView.create(
       // Describe processing when the PC key is pressed
       if(event.keyCode == 49)
       {
-          FFW.Buttons.buttonEvent('BUTTON_NAME','BUTTONDOWN');
+          FFW.Buttons.buttonEvent('DISPLAY_CURRENT_LOCATION','BUTTONDOWN');
       }
     },
     keyUp: function(event) {
       // Since the key of the PC has been released, BUTTONUP is notified to the Mobile application
       if(event.keyCode == 49)
       {
-          FFW.Buttons.buttonEvent('BUTTON_NAME','BUTTONUP');
-          FFW.Buttons.buttonPressed('BUTTON_NAME','SHORT');
+          FFW.Buttons.buttonEvent('DISPLAY_CURRENT_LOCATION','BUTTONUP');
+          FFW.Buttons.buttonPressed('DISPLAY_CURRENT_LOCATION','SHORT');
       }
     },
 …(abb)…
