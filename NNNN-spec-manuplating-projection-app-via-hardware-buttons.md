@@ -74,6 +74,10 @@ MOBILE_API.xml
         </warning>
     </element>
     <element name="ZOOM_IN" since="x.x" />
+        ~~<warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>~~
     <element name="ZOOM_OUT" since="x.x" />
     <element name="MAP_SCROLL_UP" since="x.x">
         <warning>
