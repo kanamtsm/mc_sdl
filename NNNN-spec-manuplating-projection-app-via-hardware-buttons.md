@@ -37,7 +37,7 @@ The Mobile application assumes the Projection Mode App such as Navigation App.
 |`SWITCH_DISPLAY_MODE`|To switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.|-|
 |`SET_A_DESTINATION`|To scroll on the map screen and select the place in the center of the screen to set the place as the destinationwhen using the Navigation App.|-|  
 
-  Set as follows.
+  Explabation about "SET_A_DESTINATION" as follows.
 
   The figure below shows the focus at the current position.
 
