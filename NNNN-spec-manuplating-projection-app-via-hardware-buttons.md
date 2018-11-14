@@ -483,7 +483,7 @@ HU：sdl_hmi (`https://github.com/smartdevicelink/sdl_hmi`) commit id:2db0b73444
 
 It is assumed that ButtonName to be notified is subscribed.
 
-Correct so that the press information of the PC key linked "DISPLAY_CURRENT_LOCATION" in this case is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
+**Correct so that the press information of the PC key linked "DISPLAY_CURRENT_LOCATION" in this case is notified to the sdl_hmi file (src / app / view / navigationAppView.js).
 
 ```js
 ...
@@ -499,15 +499,15 @@ SDL.NavigationAppView = Em.ContainerView.create(
       // Describe processing when the PC key is pressed
       if(event.keyCode == 49)
       {
-          FFW.Buttons.buttonEvent('DISPLAY_CURRENT_LOCATION','BUTTONDOWN');
+          FFW.Buttons.buttonEvent(**'DISPLAY_CURRENT_LOCATION','BUTTONDOWN');
       }
     },
     keyUp: function(event) {
       // Since the key of the PC has been released, BUTTONUP is notified to the Mobile application
       if(event.keyCode == 49)
       {
-          FFW.Buttons.buttonEvent('DISPLAY_CURRENT_LOCATION','BUTTONUP');
-          FFW.Buttons.buttonPressed('DISPLAY_CURRENT_LOCATION','SHORT');
+          FFW.Buttons.buttonEvent(**'DISPLAY_CURRENT_LOCATION','BUTTONUP');
+          FFW.Buttons.buttonPressed(**'DISPLAY_CURRENT_LOCATION','SHORT');
       }
     },
 …(abb)…
