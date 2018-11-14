@@ -1,6 +1,6 @@
-# Manuplating the Projection App via Hardware Button
+# Manuplating Projection App via Hardware Buttons
 
-* Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
+* Proposal: [SDL-NNNN](NNNN-spec-manuplating-projection-app-via-hardware-buttons.md)
 * Author: Marco Kok, Kana Matsushima
 * Status: **Awaiting review**
 * Impacted Platforms: iOS, Android, Core, RPC
@@ -41,15 +41,15 @@ The Mobile application assumes the Navigation App.
 
   The figure below shows the focus at the current position.
 
-  ![pic1](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_01.PNG)
+  ![pic1](./NNNN-spec-manuplating-projection-app-via-hardware-buttons_01.PNG)
 
   Scroll to the right from your current location.
 
-  ![pic2](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_02.PNG)
+  ![pic2](./NNNN-spec-manuplating-projection-app-via-hardware-buttons_02.PNG)
 
   After scrolling to the right, if you set the "destination setting", the blue mark is set as the destination.
 
-  ![pic3](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_03.PNG)
+  ![pic3](./NNNN-spec-manuplating-projection-app-via-hardware-buttons_03.PNG)
 
 ## Proposed solution
 
