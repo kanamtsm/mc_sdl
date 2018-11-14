@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This proposal adds a new function (ButtonName) to use the hardware button ~~installed in the vehicle~~ as a shortcut key.
+This proposal adds a new function (ButtonName) to use the hardware button as a shortcut key during projection mode app.
 
 ## Motivation
 
