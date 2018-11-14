@@ -1,4 +1,4 @@
-# Add ButtonName to use hardware buttons ~~with shortcuts~~
+# Manuplating the Projection App via Hardware Button
 
 * Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
 * Author: Marco Kok, Kana Matsushima
