@@ -1,4 +1,4 @@
-# Add ButtonName to use hardware buttons with shortcuts
+# Add ButtonName to use hardware buttons ~~with shortcuts~~
 
 * Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
 * Author: Marco Kok, Kana Matsushima
@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This proposal adds a new function (ButtonName) to use the hardware button installed in the vehicle as a shortcut key.
+This proposal adds a new function (ButtonName) to use the hardware button ~~installed in the vehicle~~ as a shortcut key.
 
 ## Motivation
 
