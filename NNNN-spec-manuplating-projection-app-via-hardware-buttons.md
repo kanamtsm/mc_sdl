@@ -7,16 +7,16 @@
 
 ## Introduction
 
-This proposal adds a new function (ButtonName) to use the hardware button as a shortcut key during projection mode app.
+This proposal is to add a new functions (ButtonName) to use the hardware button as a shortcut key during projection mode app.
 
 ## Motivation
 
-This proposal is for linking the function (ButtonName) to the hardware button installed in the vehicle.
-Hardware buttons are not only buttons but also physical input devices installed in vehicles such as rotary encoders.
+This proposal is for linking the functions (ButtonName) to the hardware button installed in the vehicle.
+Hardware buttons are not only buttons but also physical input devices such as rotary encoders.
 By linking, you can instruct the mobile application without displaying a button on the HU's UI.
-The contents of the instruction are ZoomIn / ZoomOut, Back etc.
-Since buttons are not displayed, car manufacturers and developers do not have to worry about the display position of the buttons.
-The Mobile application assumes the Navigation App.  
+The contents of the instruction are Zoom-In / Zoom-Out, Back etc.
+Since UI buttons don't need to be displayed, car manufacturers and developers do not have to worry about the display position of the UI buttons.
+The Mobile application assumes the Projection Mode App such as Navigation App.  
 
 ### Proposed ButtonName/ Function
 
