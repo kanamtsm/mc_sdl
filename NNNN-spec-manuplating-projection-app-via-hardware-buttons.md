@@ -74,11 +74,15 @@ MOBILE_API.xml
         </warning>
     </element>
     <element name="ZOOM_IN" since="x.x" />
-        **<warning>**
-            **When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.**
-        **</warning>**
-    **</element>**
+        **<warning>
+            **When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        **</warning>
+    **</element>
     <element name="ZOOM_OUT" since="x.x" />
+        **<warning>
+            **When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        **</warning>
+    **</element>
     <element name="MAP_SCROLL_UP" since="x.x">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
@@ -120,6 +124,10 @@ MOBILE_API.xml
         </warning>
     </element>
     <element name="BACK" since="x.x" />
+        **<warning>
+            **When using this button, please set "NAV_FULLSCREEN_MAP" and "NAV_LIST" as displayLayout from the Mobile application.
+        **</warning>
+    **</element>
     <element name="SWITCH_DISPLAY_MODE" since="x.x">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
@@ -385,7 +393,15 @@ HMI_API.xml
         </warning>
     </element>
     <element name="ZOOM_IN" />
+        **<warning>
+            **When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        **</warning>
+    **</element>
     <element name="ZOOM_OUT" />
+        **<warning>
+            **When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+            **</warning>
+    **</element>
     <element name="MAP_SCROLL_UP">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
@@ -427,6 +443,10 @@ HMI_API.xml
         </warning>
     </element>
     <element name="BACK" />
+        **<warning>
+            **When using this button, please set "NAV_FULLSCREEN_MAP" and "NAV_LIST" as displayLayout from the Mobile application.
+        **</warning>
+    **</element>
     <element name="SWITCH_DISPLAY_MODE">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
