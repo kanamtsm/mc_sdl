@@ -60,71 +60,72 @@ In order to realize these proposals, add those new ButtonName. Make changes to t
 MOBILE_API.xml
 
 ```xml
-<enum name="ButtonName">
 ...
-<!-- Buttons for mobile navigation apps -->
-<!-- 
-* These buttons are used to manipulate the mobile navigation application with hardware keys.
-* These buttons can be used when the mobile navigation application sets "NAV_FULLSCREEN_MAP" or "NAV_LIST" as displayLayout.
--->
-<element name="DISPLAY_CURRENT_LOCATION" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="ZOOM_IN" since="x.x" />
-<element name="ZOOM_OUT" since="x.x" />
-<element name="MAP_SCROLL_UP" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MAP_SCROLL_DOWN" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MAP_SCROLL_LEFT" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MAP_SCROLL_RIGHT" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MOVE_FOCUS_UP" since="x.x">
-<warning>
-When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MOVE_FOCUS_DOWN" since="x.x">
-<warning>
-When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MOVE_FOCUS_LEFT" since="x.x">
-<warning>
-When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="MOVE_FOCUS_RIGHT" since="x.x">
-<warning>
-When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="BACK" since="x.x" />
-<element name="SWITCH_DISPLAY_MODE" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
-<element name="SET_A_DESTINATION" since="x.x">
-<warning>
-When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
-</warning>
-</element>
+<enum name="ButtonName">
+    ...
+        <!-- Buttons for mobile navigation apps -->
+            <!-- 
+            * These buttons are used to manipulate the mobile navigation application with hardware keys.
+            * These buttons can be used when the mobile navigation application sets "NAV_FULLSCREEN_MAP" or "NAV_LIST" as displayLayout.
+            -->
+        <element name="DISPLAY_CURRENT_LOCATION" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="ZOOM_IN" since="x.x" />
+    <element name="ZOOM_OUT" since="x.x" />
+    <element name="MAP_SCROLL_UP" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MAP_SCROLL_DOWN" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MAP_SCROLL_LEFT" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MAP_SCROLL_RIGHT" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MOVE_FOCUS_UP" since="x.x">
+        <warning>
+            When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MOVE_FOCUS_DOWN" since="x.x">
+        <warning>
+            When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MOVE_FOCUS_LEFT" since="x.x">
+        <warning>
+            When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="MOVE_FOCUS_RIGHT" since="x.x">
+        <warning>
+            When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="BACK" since="x.x" />
+    <element name="SWITCH_DISPLAY_MODE" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
+    <element name="SET_A_DESTINATION" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
 </enum>
 ...
 ```
@@ -371,17 +372,16 @@ HMI_API.xml
     ...
     <!-- Buttons for mobile navigation apps -->
         <!-- 
-         * These buttons are used to manipulate the mobile navigation application with hardware keys.
-         * These buttons can be used when the mobile navigation application sets "NAV_FULLSCREEN_MAP" or "NAV_LIST" as displayLayout.
-         -->
+        * These buttons are used to manipulate the mobile navigation application with hardware keys.
+        * These buttons can be used when the mobile navigation application sets "NAV_FULLSCREEN_MAP" or "NAV_LIST" as displayLayout.
+        -->
     <element name="DISPLAY_CURRENT_LOCATION">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
         </warning>
     </element>
-    <element name="ZOOM_IN"/ >
+    <element name="ZOOM_IN" />
     <element name="ZOOM_OUT" />
-    </element>
     <element name="MAP_SCROLL_UP">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
@@ -406,24 +406,28 @@ HMI_API.xml
         <warning>
             When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
         </warning>
+    </element>
     <element name="MOVE_FOCUS_DOWN">
         <warning>
             When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
         </warning>
+    </element>
     <element name="MOVE_FOCUS_LEFT">
         <warning>
             When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
         </warning>
+    </element>
     <element name="MOVE_FOCUS_RIGHT">
         <warning>
             When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
         </warning>
+    </element>
     <element name="BACK" />
     <element name="SWITCH_DISPLAY_MODE">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
         </warning>
-    </warning>
+    </element>
     <element name="SET_A_DESTINATION">
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
