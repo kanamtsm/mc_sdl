@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This proposal is to add a new functions (ButtonName) to use the hardware buttons as a shortcut key during projection mode app.
+This proposal is to add new functions (ButtonName) to use the hardware buttons as a shortcut key during projection mode app.
 
 ## Motivation
 
