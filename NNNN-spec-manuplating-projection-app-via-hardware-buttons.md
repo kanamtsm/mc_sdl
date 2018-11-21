@@ -33,9 +33,9 @@ The Mobile application assumes the Projection Mode App such as Navigation App.
 |`MOVE_FOCUS_DOWN`|-|To move the focus downward on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
 |`MOVE_FOCUS_LEFT`|-|To move the focus left on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
 |`MOVE_FOCUS_RIGHT`|-|To move the focus right on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
-|`MENU`|To open the menu screen.|-||
+|`MENU`|To open the menu screen.|-|
 |`BACK`|To go back to the previous screen.|To go back to the previous screen.|
-|`SWITCH_DISPLAY_MODE`|To switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.|-|
+|`SWITCH_DISPLAY_MODE`|To switch the map screen display mode (e.g. 2D / 3D, north up / head up) when using the Navigation App.|-|
 |`SET_A_DESTINATION`|To scroll on the map screen and select the place in the center of the screen to set the place as the destinationwhen using the Navigation App.|-|  
 
 Explanation for "SET_A_DESTINATION" as follows;
@@ -124,6 +124,11 @@ MOBILE_API.xml
             When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
         </warning>
     </element>
+    <element name="MENU" since="x.x">
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+        </warning>
+    </element>
     <element name="BACK" since="x.x" />
         <warning>
             When using this button, please set "NAV_FULLSCREEN_MAP" and "NAV_LIST" as displayLayout from the Mobile application.
@@ -206,6 +211,11 @@ extern SDLButtonName const SDLButtonNameMoveFocusLeft;
 extern SDLButtonName const SDLButtonNameMoveFocusRight;
 
 /**
+* Represents a menu button.
+*/
+extern SDLButtonName const SDLButtonNameMenu;
+
+/**
  * Represents a back button.
  */
 extern SDLButtonName const SDLButtonNameBack;
@@ -238,6 +248,7 @@ SDLButtonName const SDLButtonNameMoveFocusUp = @"MOVE_FOCUS_UP";
 SDLButtonName const SDLButtonNameMoveFocusDown = @"MOVE_FOCUS_DOWN";
 SDLButtonName const SDLButtonNameMoveFocusLeft = @"MOVE_FOCUS_LEFT";
 SDLButtonName const SDLButtonNameMoveFocusRight = @"MOVE_FOCUS_RIGHT";
+SDLButtonName const SDLButtonNameBack = @"MENU";
 SDLButtonName const SDLButtonNameBack = @"BACK";
 SDLButtonName const SDLButtonNameSwitchDisplayMode = @"SWITCH_DISPLAY_MODE";
 SDLButtonName const SDLButtonNameSetADestination = @"SET_A_DESTINATION";
@@ -318,6 +329,12 @@ public enum ButtonName {
      */
     MOVE_FOCUS_RIGHT,
     /**
+     * Represents the menu button.
+     * 
+     * @since SmartDeviceLink x.x
+     */
+    MENU,
+    /**
      * Represents the back button.
      * 
      * @since SmartDeviceLink x.x
@@ -368,6 +385,8 @@ hmi_capabilities_impl.cc
       std::make_pair(std::string("MOVE_FOCUS_LEFT"), hmi_apis::Common_ButtonName::MOVE_FOCUS_LEFT));
   button_enum_name.insert(
       std::make_pair(std::string("MOVE_FOCUS_RIGHT"), hmi_apis::Common_ButtonName::MOVE_FOCUS_RIGHT));
+  button_enum_name.insert(
+      std::make_pair(std::string("MENU"), hmi_apis::Common_ButtonName::MENU));
   button_enum_name.insert(
       std::make_pair(std::string("BACK"), hmi_apis::Common_ButtonName::BACK));
   button_enum_name.insert(
@@ -442,6 +461,11 @@ HMI_API.xml
         <warning>
             When using this button, please set "NAV_LIST" as displayLayout from the Mobile application.
         </warning>
+    </element>
+    <element name="MENU" />
+        <warning>
+            When using this button, please set "NAV_FULLSCREEN_MAP" as displayLayout from the Mobile application.
+            </warning>
     </element>
     <element name="BACK" />
         <warning>
