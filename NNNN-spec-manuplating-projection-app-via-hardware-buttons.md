@@ -29,10 +29,10 @@ The Mobile application assumes the Projection Mode App such as Navigation App.
 |`MAP_SCROLL_DOWN`|To scroll down on the map screen when using the Navigation App.|-|
 |`MAP_SCROLL_LEFT`|To scroll to the left on the map screen when using the Navigation App.|-|
 |`MAP_SCROLL_RIGHT`|To scroll to the right on the map screen when using the Navigation App.|-|
-|`MOVE_FOCUS_UP`|-|To move the focus upward on a List or Icon screen(Other than the map screen). Use 'OK' to select the item.|
-|`MOVE_FOCUS_DOWN`|-|To move the focus downward on a List or Icon screen(Other than the map screen). Use 'OK' to select the item.|
-|`MOVE_FOCUS_LEFT`|-|To move the focus left on a List or Icon screen(Other than the map screen). Use 'OK' to select the item.|
-|`MOVE_FOCUS_RIGHT`|-|To move the focus right on a List or Icon screen(Other than the map screen). Use 'OK' to select the item.|
+|`MOVE_FOCUS_UP`|-|To move the focus upward on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
+|`MOVE_FOCUS_DOWN`|-|To move the focus downward on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
+|`MOVE_FOCUS_LEFT`|-|To move the focus left on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
+|`MOVE_FOCUS_RIGHT`|-|To move the focus right on a List or Icon screen(Other than the map screen). Use `OK` to select the item.|
 |`MENU`|To open the menu screen.|-||
 |`BACK`|To go back to the previous screen.|To go back to the previous screen.|
 |`SWITCH_DISPLAY_MODE`|To switch the map screen display mode (eg 2D / 3D, north up / head up) when using the Navigation App.|-|
