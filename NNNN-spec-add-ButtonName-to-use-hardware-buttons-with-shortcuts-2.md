@@ -65,19 +65,19 @@ The use of "NAV_FULLSCREEN_MAP" and "NAV_LIST" is as follows.
 
 * The Navigation App start sequence (NAV_FULLSCREEN_MAP notice sequence)
 
-  ![pic1](../NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_01.PNG)
+  ![pic1](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_01.PNG)
 
 * ButtonName notification sequence when "ZOOM_IN" is selected (NAV_FULLSCREEN_MAP)
 
-  ![pic2](../NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_02.PNG)
+  ![pic2](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_02.PNG)
 
 * ButtonName notification sequence when "MENU" is selected (NAV_LIST notice sequence)
 
-  ![pic3](../NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_03.PNG)
+  ![pic3](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_03.PNG)
 
 * ButtonName notification sequence when "MOVE_FOCUS_DOWN" is selected (NAV_LIST)
 
-  ![pic4](../NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_04.PNG)
+  ![pic4](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_04.PNG)
 
 ## Proposed solution
 
