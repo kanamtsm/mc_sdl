@@ -1,7 +1,7 @@
 # Add ButtonName to use hardware buttons with shortcuts
 
 * Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
-* Author: [XXXX]
+* Author: Kana Matsushina, Marco Kok
 * Status: **Awaiting review**
 * Impacted Platforms: iOS, Android, Core, RPC
 
@@ -39,14 +39,10 @@ The function to add is as follows.
   * This function is for scrolling to the left on the map screen when using the Navigation App.
 * Map Scroll Right
   * This function is for scrolling to the right on the map screen when using the Navigation App.
-* Move Focus Up
-  * It is a function for moving the focus upward on a screen (list screen) other than the map screen.
-* Move Focus Down
-  * It is a function for moving the focus downward on a screen (list screen) other than the map screen.
-* Move Focus Left
-  * It is a function to move the focus to the left with a screen (list screen) other than the map screen.
-* Move Focus Right
-  * It is a function to move the focus to the right with a screen (list screen) other than the map screen.
+* Move Focus Next Item
+  * It is a function for moving the focus to next item on a screen (list screen) other than the map screen.
+* Move Focus Previous Item
+  * It is a function for moving the focus to previous item on a screen (list screen) other than the map screen.
 * Back
   * It is a function for back to the previous screen.
 * Menu
@@ -132,22 +128,12 @@ MOBILE_API.xml
                 It may be notified when displayLayout is set to "NAV_FULLSCREEN_MAP".
             </warning>
         </element>
-        <element name="MOVE_FOCUS_UP" since="x.x">
+        <element name="MOVE_FOCUS_NEXT_ITEM" since="x.x">
             <warning>
                 It may be notified when displayLayout is set to "NAV_LIST".
             </warning>
         </element>
-        <element name="MOVE_FOCUS_DOWN" since="x.x">
-            <warning>
-                It may be notified when displayLayout is set to "NAV_LIST".
-            </warning>
-        </element>
-        <element name="MOVE_FOCUS_LEFT" since="x.x">
-            <warning>
-                It may be notified when displayLayout is set to "NAV_LIST".
-            </warning>
-        </element>
-        <element name="MOVE_FOCUS_RIGHT" since="x.x">
+        <element name="MOVE_FOCUS_PREVIOUS_ITEM" since="x.x">
             <warning>
                 It may be notified when displayLayout is set to "NAV_LIST".
             </warning>
@@ -211,24 +197,14 @@ extern SDLButtonName const SDLButtonNameMapScrollLeft;
 extern SDLButtonName const SDLButtonNameMapScrollRight;
 
 /**
- * Represents a move focus up button.
+ * Represents a move focus next item button.
  */
-extern SDLButtonName const SDLButtonNameMoveFocusUp;
+extern SDLButtonName const SDLButtonNameMoveFocusNextItem;
 
 /**
- * Represents a move focus down button.
+ * Represents a move focus previous item button.
  */
-extern SDLButtonName const SDLButtonNameMoveFocusDown;
-
-/**
- * Represents a move focus left button.
- */
-extern SDLButtonName const SDLButtonNameMoveFocusLeft;
-
-/**
- * Represents a move focus right button.
- */
-extern SDLButtonName const SDLButtonNameMoveFocusRight;
+extern SDLButtonName const SDLButtonNameMoveFocusPreviousItem;
 
 /**
  * Represents a back button.
@@ -254,10 +230,8 @@ SDLButtonName const SDLButtonNameMapScrollUp = @"MAP_SCROLL_UP";
 SDLButtonName const SDLButtonNameMapScrollDown = @"MAP_SCROLL_DOWN";
 SDLButtonName const SDLButtonNameMapScrollLeft = @"MAP_SCROLL_LEFT";
 SDLButtonName const SDLButtonNameMapScrollRight = @"MAP_SCROLL_RIGHT";
-SDLButtonName const SDLButtonNameMoveFocusUp = @"MOVE_FOCUS_UP";
-SDLButtonName const SDLButtonNameMoveFocusDown = @"MOVE_FOCUS_DOWN";
-SDLButtonName const SDLButtonNameMoveFocusLeft = @"MOVE_FOCUS_LEFT";
-SDLButtonName const SDLButtonNameMoveFocusRight = @"MOVE_FOCUS_RIGHT";
+SDLButtonName const SDLButtonNameMoveFocusUp = @"MOVE_FOCUS_NEXT_ITEM";
+SDLButtonName const SDLButtonNameMoveFocusDown = @"MOVE_FOCUS_PREVIOUS_ITEM";
 SDLButtonName const SDLButtonNameBack = @"BACK";
 SDLButtonName const SDLButtonNameMenu = @"MENU";
 
@@ -317,27 +291,15 @@ public enum ButtonName {
      * 
      * @since SmartDeviceLink x.x
      */
-    MOVE_FOCUS_UP,
+    MOVE_FOCUS_NEXT_ITEM,
     /**
-     * Represents the move focus down button.
+     * Represents the move focus next item button.
      * 
      * @since SmartDeviceLink x.x
      */
-    MOVE_FOCUS_DOWN,
+    MOVE_FOCUS_PREVIOUS_ITEM,
     /**
-     * Represents the move focus left button.
-     * 
-     * @since SmartDeviceLink x.x
-     */
-    MOVE_FOCUS_LEFT,
-    /**
-     * Represents the move focus right button.
-     * 
-     * @since SmartDeviceLink x.x
-     */
-    MOVE_FOCUS_RIGHT,
-    /**
-     * Represents the back button.
+     * Represents the move focus previous item button.
      * 
      * @since SmartDeviceLink x.x
      */
@@ -374,13 +336,9 @@ hmi_capabilities_impl.cc
   button_enum_name.insert(
       std::make_pair(std::string("MAP_SCROLL_RIGHT"), hmi_apis::Common_ButtonName::MAP_SCROLL_RIGHT));
   button_enum_name.insert(
-      std::make_pair(std::string("MOVE_FOCUS_UP"), hmi_apis::Common_ButtonName::MOVE_FOCUS_UP));
+      std::make_pair(std::string("MOVE_FOCUS_NEXT_ITEM"), hmi_apis::Common_ButtonName::MOVE_FOCUS_NEXT_ITEM));
   button_enum_name.insert(
-      std::make_pair(std::string("MOVE_FOCUS_DOWN"), hmi_apis::Common_ButtonName::MOVE_FOCUS_DOWN));
-  button_enum_name.insert(
-      std::make_pair(std::string("MOVE_FOCUS_LEFT"), hmi_apis::Common_ButtonName::MOVE_FOCUS_LEFT));
-  button_enum_name.insert(
-      std::make_pair(std::string("MOVE_FOCUS_RIGHT"), hmi_apis::Common_ButtonName::MOVE_FOCUS_RIGHT));
+      std::make_pair(std::string("MOVE_FOCUS_PREVIOUS_ITEM"), hmi_apis::Common_ButtonName::MOVE_FOCUS_PREVIOUS_ITEM));
   button_enum_name.insert(
       std::make_pair(std::string("BACK"), hmi_apis::Common_ButtonName::BACK));
   button_enum_name.insert(
@@ -435,22 +393,12 @@ HMI_API.xml
             It may be notified when displayLayout is set to "NAV_FULLSCREEN_MAP".
         </warning>
     </element>
-    <element name="MOVE_FOCUS_UP">
+    <element name="MOVE_FOCUS_NEXT_ITEM">
         <warning>
             It may be notified when displayLayout is set to "NAV_LIST".
         </warning>
     </element>
-    <element name="MOVE_FOCUS_DOWN">
-        <warning>
-            It may be notified when displayLayout is set to "NAV_LIST".
-        </warning>
-    </element>
-    <element name="MOVE_FOCUS_LEFT">
-        <warning>
-            It may be notified when displayLayout is set to "NAV_LIST".
-        </warning>
-    </element>
-    <element name="MOVE_FOCUS_RIGHT">
+    <element name="MOVE_FOCUS_PREVIOUS_ITEM">
         <warning>
             It may be notified when displayLayout is set to "NAV_LIST".
         </warning>
@@ -481,7 +429,7 @@ This change will not affect previous versions of SDL.
 
 ## Alternatives considered
 
-None.
+None.****
 
 ## Appendix
 
