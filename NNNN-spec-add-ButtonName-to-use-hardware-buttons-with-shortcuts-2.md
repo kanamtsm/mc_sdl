@@ -11,22 +11,20 @@ This proposal adds a new function (ButtonName) to use the hardware button instal
 
 ## Motivation
 
-This proposal is a proposal for adding a hardware button installed in the vehicle to ButtonName.
+This proposal is a proposal for adding a hardware button installed in the vehicle to a function (ButtonName).
 Hardware buttons are not only buttons but also general physical input devices installed in vehicles such as rotary encoders.
-While in the projection mode, the HU can not grasp the contents displayed on the screen.
-So, during projection mode, it is very difficult for the HU to place soft buttons on the screen.
-Thus, among projection modes, the contents to display to a screen of HU should entrust navigation application.
-Also, applications that use projection mode should be limited to navigation applications and OEM applications.
+The application configures the screen during the projection mode, so the Head Unit (HU) can not grasp the contents displayed on the screen.
+Also, the applications that use the projection mode should be limited to the navigation applications and the OEM applications.
 Because HU does not locate a soft button on a screen, the navigation application can make content of the projection freely.
-However, the functions of icons and buttons that can be displayed on the projection should be limited to the functions added this time.
+However, the functions of icons and buttons that can be displayed on the projection should be limited to the basic functions added this time.
 If there is a function other than the function to be added, it should be expressed as a menu item.
-By doing so, by linking the function (ButtonName) to the hardware button, you can instruct the navigation application without displaying the soft button on the HU's UI.
+By linking the function (ButtonName) to the hardware button, the user can instruct the navigation application without displaying the soft button on the HU's UI.
 The contents of the instruction are ZoomIn / ZoomOut, Back etc.
 Adding this function improves the operability and appearance of applications that use the projection mode.
 The function to add is as follows.
 
 * Display Current Location
-  * This is the function to set your current location in the center of the map. By adding this function, users will be able to easily center their current location.
+  * This is the function to set your current location in the center of the map. By adding this function, the users will be able to easily center their current location.
 * Zoom In
   * This function is for enlarging the map screen when using the Navigation App.
 * Zoom Out
