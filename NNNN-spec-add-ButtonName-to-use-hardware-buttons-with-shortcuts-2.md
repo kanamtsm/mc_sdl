@@ -427,7 +427,7 @@ This change will not affect previous versions of SDL.
 
 ## Alternatives considered
 
-Instead of notifying the functions, HU notifies the hardware button information  to the application.
+Instead of notifying the functions, HU notifies the hardware button information  to the application directory.
 Then the application works by itself.
 For example,
 * Rotary Switch Rotate Right
