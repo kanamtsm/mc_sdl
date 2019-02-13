@@ -433,9 +433,9 @@ For example,
 * Rotary Switch Rotate Right
 * Rotary Switch Rotate Left
 * Rotary Switch Slide Upward
-* Rotary Switch Rotate Downward
-* Rotary Switch Rotate Rightward
-* Rotary Switch Rotate Leftward, etc.
+* Rotary Switch Slide Downward
+* Rotary Switch Slide Rightward
+* Rotary Switch Slide Leftward, etc.
 
 Potential downsides are that 1) it's hard to define all the hardware buttons which all the OEM have, 2) the OEMs are not able to control the user experiences nor the unified UI behavior between other similar applitations because only the application vendor knows how to deal the hardware button.
 
