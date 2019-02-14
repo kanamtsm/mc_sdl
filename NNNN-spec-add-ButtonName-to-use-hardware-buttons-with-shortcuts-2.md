@@ -429,13 +429,13 @@ This change will not affect previous versions of SDL.
 
 Instead of notifying the functions, HU notifies the hardware button information  to the application directory.
 Then the application works by itself.
-For example,
-* Rotary Switch Rotate Right
-* Rotary Switch Rotate Left
-* Rotary Switch Slide Upward
-* Rotary Switch Slide Downward
-* Rotary Switch Slide Rightward
-* Rotary Switch Slide Leftward, etc.
+For example (They are very limited examples),
+* Rotary Encoder Rotate Right
+* Rotary Encoder Rotate Left
+* Rotary Encoder Slide Upward
+* Rotary Encoder Slide Downward
+* Rotary Encoder Slide Rightward
+* Rotary Encoder Slide Leftward, etc.
 
 Potential downsides are that 1) it's hard to define all the hardware buttons which all the OEM have, 2) the OEMs are not able to control the user experiences nor the unified UI behavior between other similar applitations because only the application vendor knows how to deal the hardware button.
 
