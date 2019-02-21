@@ -1,4 +1,4 @@
-# Add ButtonName to use hardware buttons with shortcuts
+# Add ButtonName to enable hardware buttons as a commander
 
 * Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
 * Author: Kana Matsushina, Marco Kok
@@ -13,13 +13,13 @@ This proposal adds a set of functions (ButtonName) to enable the hardware button
 The application configures the screen during the projection mode, so the Head Unit (HU) does not know the contents displayed on the screen.
 This proposal adds a set of functions (ButtonName) to enable the hardware button installed in the vehicle as a commander.
 Hardware buttons include general physical input devices installed in vehicles such as rotary encoders.
-By linking a function (ButtonName) to a hardware button, the user can instruct the navigation application to ZoomIn / ZoomOut, Back, etc. without soft buttons on the HU.
+By linking a function (ButtonName) to a hardware button, the user can instruct the navigation application to ZoomIn / ZoomOut, Back, etc. without software buttons on the HU.
 Adding this function improves the operability and appearance of applications that use the projection mode.  
 
 **The things should be in the best practice;**  
-HU does not need to deploy any soft button on a screen, so the navigation application can make content of the projection freely.  
+HU does not need to deploy any software buttons on a screen, so the navigation application can make content of the projection freely.  
 *Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.  
-*If the application deploys the softbutton, it should be limited within the functions from this proposal or "OK" which already SDL defined.  
+*If the application deploys the software button, it should be limited within the functions from this proposal or "OK" which already SDL defined.  
 *Uncommon function should be expressed in a menu list as the item.
 
 
@@ -444,7 +444,7 @@ Potential downsides are that 1) it's hard to define all the hardware buttons whi
 ## Appendix
 
 In order to realize this proposal, the HU needs to read the information of the hardware button equipped in the vehicle, and dispose that button as appropriate to ButtonName.
-As an example, let's take a look at the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and introduce a mechanism to notify the mobile application of ButtonName without going through the soft button.
+As an example, let's take a look at the keyboard key of the PC as a hardware button installed in the vehicle, read it with sdl_hmi, and introduce a mechanism to notify the mobile application of ButtonName without going through the software button.
 
 The base code is as follows.  
 HU：sdl_hmi (`https://github.com/smartdevicelink/sdl_hmi`) commit id:2db0b73444ac46db72ffe45e1eae166836be4a4a
