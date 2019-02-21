@@ -15,6 +15,7 @@ This proposal adds a set of functions (ButtonName) to enable the hardware button
 Hardware buttons include general physical input devices installed in vehicles such as rotary encoders.
 By linking a function (ButtonName) to a hardware button, the user can instruct the navigation application to ZoomIn / ZoomOut, Back, etc. without soft buttons on the HU.
 Adding this function improves the operability and appearance of applications that use the projection mode.  
+
 **The things should be in the best practice;**  
 HU does not need to deploy any soft button on a screen, so the navigation application can make content of the projection freely.  
 *Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.  
