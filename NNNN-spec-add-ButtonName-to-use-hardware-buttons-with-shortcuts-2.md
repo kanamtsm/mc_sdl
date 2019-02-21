@@ -10,18 +10,23 @@
 This proposal adds a new function (ButtonName) to use the hardware button installed in the vehicle as a shortcut key.
 
 ## Motivation
-
+The application configures the screen during the projection mode, so the Head Unit (HU) can not grasp the contents displayed on the screen.
 This proposal is a proposal for adding a hardware button installed in the vehicle to a function (ButtonName).
 Hardware buttons are not only buttons but also general physical input devices installed in vehicles such as rotary encoders.
-The application configures the screen during the projection mode, so the Head Unit (HU) can not grasp the contents displayed on the screen.
-Also, the applications that use the projection mode should be limited to the navigation applications and the OEM applications.
-Because HU does not locate a soft button on a screen, the navigation application can make content of the projection freely.
-However, the functions of icons and buttons that can be displayed on the projection should be limited to the basic functions added this time.
-If there is a function other than the function to be added, it should be expressed as a menu item.
 By linking the function (ButtonName) to the hardware button, the user can instruct the navigation application without displaying the soft button on the HU's UI.
 The contents of the instruction are ZoomIn / ZoomOut, Back etc.
 Adding this function improves the operability and appearance of applications that use the projection mode.
-The function to add is as follows.
+
+
+**また、以下の内容を、ベストプラクティスに追記してください。**
+Because HU does not need to deploy any soft button on a screen, the navigation application can make content of the projection freely.
+
+*Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.
+*If the application deploys the softbutton, it should be limited within the functions from this proposal or "OK" which already SDL defined.
+*If there is a function other than the function to be added from this proposal, it should be expressed in a menu list as the item.
+
+
+**The function to add is as follows;**
 
 * Display Current Location
   * This is the function to set your current location in the center of the map. By adding this function, the users will be able to easily center their current location.
