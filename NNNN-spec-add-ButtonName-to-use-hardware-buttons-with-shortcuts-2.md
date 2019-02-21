@@ -7,23 +7,19 @@
 
 ## Introduction
 
-This proposal adds a new function (ButtonName) to use the hardware button installed in the vehicle as a shortcut key.
+This proposal adds a set of functions (ButtonName) to enable the hardware button installed in the vehicle as a commander.
 
 ## Motivation
-The application configures the screen during the projection mode, so the Head Unit (HU) can not grasp the contents displayed on the screen.
-This proposal is a proposal for adding a hardware button installed in the vehicle to a function (ButtonName).
-Hardware buttons are not only buttons but also general physical input devices installed in vehicles such as rotary encoders.
-By linking the function (ButtonName) to the hardware button, the user can instruct the navigation application without displaying the soft button on the HU's UI.
-The contents of the instruction are ZoomIn / ZoomOut, Back etc.
-Adding this function improves the operability and appearance of applications that use the projection mode.
-
-
-**また、以下の内容を、ベストプラクティスに追記してください。**
-Because HU does not need to deploy any soft button on a screen, the navigation application can make content of the projection freely.
-
-*Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.
-*If the application deploys the softbutton, it should be limited within the functions from this proposal or "OK" which already SDL defined.
-*If there is a function other than the function to be added from this proposal, it should be expressed in a menu list as the item.
+The application configures the screen during the projection mode, so the Head Unit (HU) does not know the contents displayed on the screen.
+This proposal adds a set of functions (ButtonName) to enable the hardware button installed in the vehicle as a commander.
+Hardware buttons include general physical input devices installed in vehicles such as rotary encoders.
+By linking a function (ButtonName) to a hardware button, the user can instruct the navigation application to ZoomIn / ZoomOut, Back, etc. without soft buttons on the HU.
+Adding this function improves the operability and appearance of applications that use the projection mode.  
+**The things should be in the best practice;**  
+HU does not need to deploy any soft button on a screen, so the navigation application can make content of the projection freely.  
+*Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.  
+*If the application deploys the softbutton, it should be limited within the functions from this proposal or "OK" which already SDL defined.  
+*Uncommon function should be expressed in a menu list as the item.
 
 
 **The function to add is as follows;**
