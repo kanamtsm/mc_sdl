@@ -17,10 +17,9 @@ By linking a function (ButtonName) to a hardware button, the user can instruct t
 Adding this function improves the operability and appearance of applications that use the projection mode.  
 
 **The things should be in the best practice;**  
-HU does not need to deploy any software buttons on a screen, so the navigation application can make content of the projection freely.  
-*Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.  
-*If the application deploys the software button, it should be limited within the functions from this proposal or "OK" which already SDL defined.  
-*Uncommon function should be expressed in a menu list as the item.
+* Strongly recommend that the applications that use the projection mode should be limited to the navigation applications and the OEM applications.  
+* If the application deploys the software button, it should be limited within the functions from this proposal or "OK" which already SDL defined.  
+* Uncommon function should be expressed in a menu list as the item.
 
 
 **The function to add is as follows;**
