@@ -1,6 +1,6 @@
-# Add ButtonName to enable hardware buttons as a commander
+# Hardware Buttons Support in Projection Mode
 
-* Proposal: [SDL-NNNN](NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts.md)
+* Proposal: [SDL-NNNN](NNNN-spec-hardware-buttons-support-in-projection-mode.md)
 * Author: Kana Matsushina, Marco Kok
 * Status: **Awaiting review**
 * Impacted Platforms: iOS, Android, Core, RPC
@@ -61,19 +61,19 @@ The use of "NAV_FULLSCREEN_MAP" and "NAV_LIST" is as follows.
 
 * The Navigation App start sequence (NAV_FULLSCREEN_MAP notice sequence)
 
-  ![pic1](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_01.png)
+  ![pic1](./NNNN-spec-hardware-buttons-support-in-projection-mode_01.png)
 
 * ButtonName notification sequence when "ZOOM_IN" is selected (NAV_FULLSCREEN_MAP)
 
-  ![pic2](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_02.png)
+  ![pic2](./NNNN-spec-hardware-buttons-support-in-projection-mode_02.png)
 
 * ButtonName notification sequence when "MENU" is selected (NAV_LIST notice sequence)
 
-  ![pic3](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_03.png)
+  ![pic3](./NNNN-spec-hardware-buttons-support-in-projection-mode_03.png)
 
 * ButtonName notification sequence when "MOVE_FOCUS_DOWN" is selected (NAV_LIST)
 
-  ![pic4](./NNNN-spec-add-ButtonName-to-use-hardware-buttons-with-shortcuts_04.png)
+  ![pic4](./NNNN-spec-hardware-buttons-support-in-projection-mode_04.png)
 
 ## Proposed solution
 
